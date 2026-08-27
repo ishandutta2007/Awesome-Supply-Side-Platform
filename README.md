@@ -1,355 +1,240 @@
-# Awesome-Supply-Side-Platform
-
-Edit
-Top Supply-Side Platform (SSP) Ecosystem
-
-Curated List of SaaS Products & Open-Source GitHub Projects
-Focused on Publisher Monetization, Programmatic Advertising, Header Bidding, RTB & Yield Optimization
-Last updated: August 2026
-
-This repository tracks notable SaaS/hosted platforms and open-source projects for Supply-Side Platforms (SSPs). These platforms help publishers and media owners monetize digital inventory across web, mobile apps, CTV/OTT, video, audio, native advertising, and other programmatic channels.
-
-SSPs typically provide capabilities such as real-time bidding (RTB), header bidding, yield optimization, programmatic direct deals, private marketplaces (PMPs), identity/addressability, audience segmentation, fraud prevention, inventory management, analytics, and demand-partner connectivity.
-
-Examples include Magnite, PubMatic, OpenX, Index Exchange, Equativ, TripleLift, Sharethrough, Xandr Monetize, Google Ad Manager, and Sovrn — among the major commercial platforms used by publishers and media companies.
-
-Open-source emphasis: The open-source SSP ecosystem is considerably smaller than the commercial SSP market. Therefore, this list emphasizes projects that can actually provide pieces of an SSP stack — including open-source RTB auction infrastructure, header bidding, ad servers, OpenRTB implementations, SSP experiments, and publisher monetization infrastructure. Prebid Server, for example, is explicitly an open-source real-time advertising auction platform, while Revive Adserver provides a mature open-source ad-serving foundation.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites or canonical GitHub repositories.
-
-Table of Contents
-
-SaaS/Hosted Platforms
-
-Open-Source GitHub Projects
-
-Open-Source Building Blocks
-
-How to Contribute
-
-Disclaimer
-
-## SaaS/Hosted Platforms
-
-| Platform | Description | Pricing (Starting Tier / Model) | Free Tier / Free Trial Limits |
-| :--- | :--- | :--- | :--- |
-| **Google Ad Manager** | Google's publisher ad platform combining ad serving, programmatic demand, direct campaigns, inventory management, and yield optimization. | Free standard tier; GAM 360 starts with custom contracted rates (~$1,500–$3,000/month minimum or ~$100k/year enterprise agreement). | **Free forever** up to 90M non-video impressions/month (US/CA/ANZ/Europe) or 200M non-video impressions/month (other regions); 800k video impressions/month. |
-| **AdGlare** | Cloud-based ad server for publishers and advertisers supporting display advertising, campaign management, targeting, and analytics. | **Lite tier starts at $99/month** (up to 2M requests); Professional at $349/month (up to 10M requests); Enterprise at $649/month. | **14-day free trial** with all features unlocked and up to 10,000,000 ad requests. |
-| **AdButler** | Hosted ad-serving platform providing direct-sold campaign management, programmatic integrations, custom pacing, and reporting. | **Essentials tier starts at $179/month** (up to 1M requests); Standard at $399/month; Advanced at $699/month. | **14-day free trial** with full platform feature access and 30 days of free onboarding support. |
-| **Broadstreet** | Publisher-focused advertising platform designed for direct-sold advertising, hyper-local publishers, newsletters, and rich media campaigns. | **Manual tier starts at $299/month**; Automatic tier starts at $399/month; Enterprise custom pricing. | **Live sandbox demo** on request + free permanent access to "Daybreak" publisher lead-generation tools. |
-| **Kevel** | API-first ad infrastructure platform enabling publishers and retailers to build custom ad servers, sponsored listings, and retail media networks. | **Starting tier at $3,000/month** (base API tier with standard request volume); custom scaling for enterprise deployments. | **Interactive developer sandbox & API test environment** during guided sales onboarding (no self-serve free tier). |
-| **StackAdapt** | Multi-channel programmatic platform with extensive publisher and supply connectivity across display, video, CTV, native, and audio. | **$0 monthly platform software fee** (self-serve tier; recommended starting ad spend of $1,000–$2,000/month; managed service from $5,000/month). | **Free platform account registration** with full UI access and free enrollment in Programmatic Masterclass certification. |
-| **Amazon Publisher Services (APS)** | Publisher monetization suite providing transparent server-to-server header bidding (TAM), marketplace demand (UAM), and shopping insights. | **10% publisher transaction fee** deducted from buyer bids before entering auction (Transparent Ad Marketplace / TAM). | **Free publisher registration & SDK integration** with zero recurring monthly subscription or maintenance fees. |
-| **Sovrn** | Publisher technology platform providing programmatic advertising, commerce monetization, site performance analytics, and consent tools. | **Flat CPM platform fee** (0% rev-share take rate when bundling Ad Management + Exchange) or standard ~15%–20% exchange rev-share. | **Free publisher signup and onboarding** with no upfront setup fees (requires minimum 10,000 monthly pageviews). |
-| **Magnite** | Independent sell-side advertising platform supporting omnichannel programmatic monetization across CTV, video, display, and mobile. | **Dynamic take rate starting at ~10%–15%** revenue share on cleared CTV and programmatic ad revenue. | **Free partner onboarding and contract evaluation**; live test-traffic auction analysis during publisher integration. |
-| **PubMatic** | Cloud infrastructure platform for publishers and app developers, delivering header bidding (OpenWrap), programmatic auctions, and yield tools. | **Dynamic take rate starting at ~10%–13%** revenue share on publisher impression volume. | **Free publisher registration & OpenWrap wrapper integration** with no recurring software license fees. |
-| **OpenX** | Programmatic advertising exchange and publisher monetization platform connecting inventory with global demand across web, mobile, and CTV. | **Programmatic revenue share starting at ~10%–15%** take rate on auction clearing prices. | **Free publisher onboarding & OpenRTB tag integration** with access to OpenX Community tools (traffic volume thresholds apply). |
-| **Index Exchange** | Independent ad exchange providing transparent programmatic marketplaces, client audit logs, and unified auction decisioning. | **Transparent dynamic take rate starting at ~10%–12%** per-impression transaction fee. | **Free publisher integration and Client Audit Log access** with zero upfront setup or licensing fees. |
-| **Equativ** | Independent ad tech company offering end-to-end programmatic supply infrastructure, curation, native formats, and video/CTV monetization. | **Programmatic take rate starting at ~10%–15%** margin / CPM-based targeting fee on auction transactions. | **Free publisher evaluation & SDK integration sandbox** during partner onboarding. |
-| **TripleLift** | Programmatic platform specializing in native advertising, branded content, custom video, CTV, and retail media monetization. | **Programmatic take rate starting at ~15%–20%** revenue share on native and premium ad placements. | **Free tag/adapter implementation & creative rendering sandbox** testing prior to live monetization. |
-| **Sharethrough** | Native and programmatic supply platform focused on dynamic ad enhancements, user-centric experiences, and publisher yield. | **Programmatic take rate starting at ~12%–15%** on dynamic native, display, and video placements. | **Free publisher placement setup & SmartSuite enhancement testing** with no upfront integration cost. |
-| **Xandr Monetize** | Enterprise sell-side monetization technology (Microsoft Advertising) connecting publishers to demand through auctions and private marketplaces. | **Seller Auction Service Charge (SASC) starting at ~10%–15%** take rate or ~$0.01–$0.03 tech fee CPM. | **Free API sandbox testing & developer documentation access** during contractual partner onboarding. |
-| **Yahoo SSP** | Omnichannel publisher monetization platform offering programmatic demand, identity resolution (Yahoo ConnectID), and header bidding. | **Programmatic take rate starting at ~10%–15%** on publisher inventory transactions. | **Free publisher onboarding, ConnectID integration, and yield test period** with no upfront fees. |
-| **Nexxen** | Sell-side and video advertising platform combining CTV monetization, discovery data, identity, and exchange infrastructure. | **Programmatic take rate starting at ~12%–18%** on video, CTV, and omnichannel media spend. | **Free platform demo walkthrough and trial pilot evaluation** for verified publisher inventory. |
-| **Adform** | Integrated programmatic advertising platform providing ad serving, media buying, identity (ID Fusion), and publisher monetization. | **Platform tech fee starting at ~$0.05–$0.15 CPM** or custom annual licensing for enterprise stack. | **Guided proof-of-concept / paid pilot period** with demo sandbox environment access. |
-| **Yieldmo** | Ad exchange and optimization platform specializing in mobile and web inventory, contextual AI targeting, and micro-moment ad formats. | **Programmatic take rate starting at ~15%–20%** on proprietary high-engagement mobile ad units. | **Free tag integration & A/B yield test period** with zero upfront onboarding fees. |
-| **Onetag** | Programmatic ad exchange and yield optimization engine utilizing AI to eliminate non-performing bid requests and streamline demand routing. | **Auction-based take rate starting at ~10%–15%** on direct programmatic demand routing. | **Free publisher header-bidding adapter setup & test-auction traffic analysis**. |
-| **Bidtellect** | Programmatic technology provider focused on native advertising, contextual targeting, brand safety, and publisher yield. | **Programmatic revenue share starting at ~15%–20%** on native and contextual campaign delivery. | **Free publisher tag onboarding & initial campaign performance test period**. |
-
-Open-Source GitHub Projects
-Open-Source SSP / RTB Infrastructure
-
-Prebid Server
-Open-source server-side header-bidding and real-time advertising auction platform. It integrates with Prebid.js and Prebid Mobile and supports OpenRTB-based auctions, bid adapters, analytics modules, floors, privacy controls, and supply-chain functionality.
-
-Prebid.js
-Open-source client-side header-bidding framework that enables publishers to run auctions among multiple demand partners before or alongside their primary ad server.
-
-Prebid Mobile
-Open-source header-bidding SDK for mobile applications, bringing Prebid's auction infrastructure to iOS and Android environments.
-
-OpenSSP
-Open-source supply-side platform designed for general use, supporting RTB and multiple impression types. The project describes itself as a multi-channel SSP and includes OpenRTB support.
-
-ZenAd
-Apache-2.0 open-source advertising monetization platform combining SSP, ad-server, and DMP-style capabilities. It includes an OpenRTB adapter and federated auction architecture.
-
-Ad Nano
-Open-source experimental ad-tech platform containing publisher, SSP, DSP, ad exchange, and ad-view components. It supports OpenRTB auctions and provides an end-to-end environment for experimenting with programmatic advertising infrastructure.
-
-Open-Source Ad Servers
-
-Revive Adserver
-Mature GPL-licensed open-source ad-serving system. It supports publisher inventory, campaign management, targeting, frequency capping, geo-targeting, impressions, clicks, conversions, and reporting.
-
-OpenX Source / Revive Adserver lineage
-Revive Adserver originated from the open-source OpenX lineage and remains one of the most established open-source options for self-hosted ad serving.
-
-OIOpublisher
-Community/open-source ad-management software historically used for direct advertising, inventory management, and publisher-side campaign delivery. Check current maintenance and licensing before production use.
-
-OpenRTB / Programmatic Advertising Infrastructure
-
-OpenRTB specification
-IAB Tech Lab's OpenRTB specifications provide the common protocol foundation for communication between SSPs, exchanges, DSPs, and other programmatic advertising systems.
-
-Prebid Server Go
-Server-side OpenRTB auction infrastructure implemented in Go, suitable for publishers or technology providers building their own auction layer.
-
-Prebid.js
-Browser-side auction and bidder-adapter ecosystem providing the core client-side header-bidding layer used by publishers.
-
-Prebid Universal Creative
-Open-source creative-rendering infrastructure used within Prebid-based advertising workflows.
-
-Additional Strong Open-Source Options
-
-Revive Adserver — Mature self-hosted ad server.
-
-Prebid Server — Server-side real-time auction infrastructure.
-
-Prebid.js — Client-side header bidding.
-
-Prebid Mobile — Mobile header bidding.
-
-OpenSSP — Purpose-built open-source SSP project.
-
-ZenAd — Modern open-source SSP/ad-server/DMP-style project.
-
-Ad Nano — End-to-end experimental SSP/DSP/exchange stack.
-
-OpenRTB — Core protocol specification for RTB systems.
-
-Mediation / auction engines — Useful foundation for custom publisher auctions and yield experimentation.
-
-Open-source analytics — Can be combined with ad infrastructure for publisher analytics.
-
-Open-source observability — Useful for monitoring auction latency, fill rate, bid density, CPM, timeout rates, and infrastructure health.
-
-Best open-source starting points:
-
-Closest purpose-built SSP: OpenSSP
-
-Best modern auction infrastructure: Prebid Server
-
-Best client-side header bidding: Prebid.js
-
-Best mature self-hosted ad server: Revive Adserver
-
-Best experimental full ad-tech stack: ZenAd / Ad Nano
-
-Best protocol foundation: OpenRTB
-
-Best mobile auction layer: Prebid Mobile
-
-Best customizable architecture: Prebid Server + Revive Adserver + OpenRTB
-
-Best publisher-owned stack: Prebid.js + Prebid Server + Revive Adserver + custom analytics
-
-Open-Source Building Blocks
-Layer	Open-Source Options	Purpose
-SSP / Auction	Prebid Server, OpenSSP, ZenAd	Real-time auctions and supply-side decisioning
-Header Bidding	Prebid.js	Client-side multi-demand auctions
-Mobile Bidding	Prebid Mobile	iOS/Android monetization
-Ad Server	Revive Adserver	Inventory, campaigns, targeting and delivery
-RTB Protocol	OpenRTB	SSP/DSP/exchange communication
-Bid Adapters	Prebid Server / Prebid.js adapters	Connect demand partners
-Yield Optimization	Prebid Floors / custom auction modules	Dynamic floors and auction optimization
-Supply Chain	Prebid Server schain support	Supply-path transparency
-Consent	Prebid privacy modules	GDPR/US privacy signaling and controls
-Identity	Prebid identity modules	Addressability and identity integrations
-Analytics	Matomo	Publisher and website analytics
-Dashboards	Grafana	Auction and revenue monitoring
-Metrics	Prometheus	Infrastructure and auction metrics
-Data Processing	Apache Kafka	High-volume bid/event streaming
-Analytics Warehouse	ClickHouse	High-volume impression/bid analytics
-Cache	Redis	Low-latency auction and configuration caching
-Database	PostgreSQL	Publisher, inventory, deal and configuration data
-Object Storage	MinIO	Self-hosted event/creative/log storage
-Search	OpenSearch	Search and log analysis
-Workflow	Apache Airflow	ETL and advertising-data pipelines
-Containers	Docker / Kubernetes	Deployment and horizontal scaling
-API Gateway	Kong	API management for SSP services
-Observability	OpenTelemetry	Distributed auction tracing
-Typical Open-Source SSP Architecture
-
-A publisher seeking to build a self-hosted alternative to a commercial SSP can combine:
-
-Publisher Website/App — advertising inventory and ad slots.
-
-Prebid.js / Prebid Mobile — client-side or mobile demand orchestration.
-
-Prebid Server — server-side auction and OpenRTB processing.
-
-OpenRTB — standardized SSP/DSP communication.
-
-Revive Adserver — direct campaigns, fallback inventory and campaign management.
-
-OpenSSP / custom auction engine — additional SSP-specific decisioning.
-
-Redis — low-latency configuration, frequency and auction state.
-
-Kafka — impression, bid, win, loss and event streaming.
-
-ClickHouse — high-volume bid-stream and revenue analytics.
-
-Grafana + Prometheus — operational and auction monitoring.
-
-PostgreSQL — publishers, placements, deals and configuration.
-
-MinIO — self-hosted creative and event storage.
-
-This architecture can provide publishers with substantially more control over inventory, auction logic, bidder relationships, first-party data, infrastructure, and monetization economics than a fully outsourced SSP.
-
-Key SSP Capabilities to Evaluate
-
-When comparing commercial and open-source SSP solutions, evaluate:
-
-Real-time bidding (RTB)
-
-OpenRTB 2.x / 3.x support
-
-Header bidding
-
-Server-side header bidding
-
-Client-side auctions
-
-Mobile app monetization
-
-CTV/OTT
-
-Video advertising
-
-Native advertising
-
-Audio advertising
-
-PMP/private deals
-
-Programmatic guaranteed
-
-Preferred deals
-
-Dynamic floor pricing
-
-Yield optimization
-
-Bid shading / auction optimization
-
-First-price auctions
-
-Identity resolution
-
-Privacy / consent management
-
-GDPR / US privacy support
-
-ads.txt
-
-app-ads.txt
-
-sellers.json
-
-SupplyChain Object (schain)
-
-Fraud detection
-
-Brand safety
-
-Viewability
-
-Demand-partner management
-
-Bidder adapters
-
-Inventory management
-
-Deal management
-
-Frequency capping
-
-Audience targeting
-
-Contextual targeting
-
-Real-time analytics
-
-Revenue reporting
-
-Latency monitoring
-
-Auction transparency
-
-Publisher APIs
-
-Self-hosting
-
-Kubernetes scalability
-
-Data ownership
-
-Commercial SSP vs Open-Source Stack
-Capability	Commercial SSP	Open-Source Stack
-Auction engine	Managed	Build/manage
-Demand partners	Usually built-in	Configure adapters/partners
-Infrastructure	Vendor-managed	Publisher-managed
-Data ownership	Vendor-dependent	Publisher-controlled
-Custom auction logic	Usually limited	Fully customizable
-Header bidding	Included	Prebid
-OpenRTB	Included	Prebid Server / OpenRTB
-Direct campaigns	Usually available	Revive Adserver
-Reporting	Built-in	Build/customize
-Scaling	Vendor-managed	Kubernetes/cloud infrastructure
-Privacy controls	Vendor-provided	Publisher-managed
-Revenue share	Often applicable	No SSP platform fee, but infrastructure costs remain
-Maintenance	Vendor	Publisher/team
-Development effort	Low	High
-Customization	Moderate	Very high
-Transparency	Vendor-dependent	Code-level transparency
-How to Contribute
-
-Fork the repo.
-
-Add/edit entries in README.md following the existing format.
-
-Include: name, link, 1–2 sentence description, and whether it is SaaS, hosted, open-source, open-core, or source-available.
-
-For GitHub projects, prefer the canonical upstream repository.
-
-Clearly distinguish actual SSPs from ad servers, header-bidding frameworks, DSPs, RTB protocols, and supporting infrastructure.
-
-Verify the current license and repository activity before labeling a project as open source.
-
-Mention supported formats such as display, mobile, video, CTV, audio, native, and DOOH where applicable.
-
-Mention important standards such as OpenRTB, ads.txt, sellers.json, and SupplyChain Object where applicable.
-
-Submit a PR with a short explanation.
-
-Star the repo if you find it useful!
-
-Disclaimer
-
-This is a community-curated list — not exhaustive and not an endorsement.
-
-Commercial SSPs frequently change ownership, product names, positioning, and product capabilities.
-
-SSP, ad server, ad exchange, header-bidding platform, DSP, and retail-media platform are distinct categories, although modern advertising companies may operate across several of them.
-
-The open-source ecosystem is substantially smaller than the commercial SSP ecosystem.
-
-Some projects listed in the open-source section are supporting infrastructure rather than complete production-grade SSPs.
-
-OpenSSP, ZenAd, and Ad Nano should be evaluated carefully for production maturity, maintenance activity, scalability, security, and demand-partner availability before being used for significant advertising traffic.
-
-Open source, source-available, free software, and hosted free tiers are different concepts. Always verify the current license.
-
-A self-hosted SSP requires substantial operational work around latency, security, privacy, fraud, identity, consent, billing, demand integrations, uptime, monitoring, and regulatory compliance.
-
-Advertising systems process potentially sensitive user and publisher data. Proper consent, privacy, security, data-retention, and jurisdictional controls are essential.
-
-Revenue outcomes depend heavily on demand connectivity, traffic quality, inventory quality, geography, formats, auction design, latency, floors, identity/addressability, and publisher relationships.
-
-Made for publishers, media companies, app developers, CTV operators, ad-tech engineers, programmatic teams, and developers building publisher-owned advertising infrastructure.
-Let's make supply-side advertising more transparent, programmable, interoperable, data-driven, and open-source.
+<div align="center">
+
+![Awesome Supply-Side Platform](assets/banner.svg)
+
+# 🚀 Awesome Supply-Side Platform (SSP) Ecosystem
+
+<p align="center">
+  <strong>Curated Directory of Commercial SaaS Products & Open-Source Projects for Digital Publishers, Programmatic Advertising, Header Bidding, OpenRTB & Yield Optimization</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Supply-Side-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Supply-Side-Platform?style=flat-square&logo=github" alt="Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Supply-Side-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Supply-Side-Platform?style=flat-square&logo=github" alt="Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Supply-Side-Platform/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <em>Last updated: August 2026</em>
+</p>
+
+</div>
+
+---
+
+## 📖 Overview
+
+This repository tracks the complete programmatic ad tech landscape for **Supply-Side Platforms (SSPs)**, **Header Bidding Wrappers**, **Ad Servers**, **Ad Exchanges**, and **Open-Source RTB Infrastructure**. These platforms empower digital publishers, app developers, CTV broadcasters, and media owners to maximize yield, orchestrate multiple demand sources, and monetize impressions across display, video, connected TV (CTV/OTT), native, audio, and mobile in-app environments.
+
+Key programmatic capabilities covered:
+* ⚡ **Real-Time Bidding (RTB & OpenRTB 2.x/3.x)** protocols and low-latency auction engines.
+* 🔄 **Client-side & Server-side Header Bidding** (Prebid.js, Prebid Server, Amazon APS).
+* 📈 **Yield Optimization & Dynamic Floor Pricing** to maximize publisher eCPM.
+* 🛡️ **Supply Path Optimization (SPO), Brand Safety, and Fraud Prevention** (ads.txt, app-ads.txt, sellers.json, schain).
+* 🆔 **Addressability & Identity Resolution** (Unified ID 2.0, ID5, LiveRamp RampID, Yahoo ConnectID, SharedID).
+* 🔒 **Privacy & Consent Compliance** (TCF v2.2, US Privacy, GPP).
+
+---
+
+## 📑 Table of Contents
+
+- [🏢 Commercial SaaS & Hosted Platforms](#-commercial-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧱 Open-Source Building Blocks](#-open-source-building-blocks)
+- [🏗️ Typical Open-Source SSP Architecture](#️-typical-open-source-ssp-architecture)
+- [🔍 Key SSP Capabilities to Evaluate](#-key-ssp-capabilities-to-evaluate)
+- [⚖️ Commercial SSP vs Open-Source Stack](#-commercial-ssp-vs-open-source-stack)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## 🏢 Commercial SaaS & Hosted Platforms
+
+> 🌐 **Market Overview & Industry Structure:** The global Supply-Side Platform (SSP) and Programmatic Advertising market is estimated at **$60B–$120B+** (as part of the $600B+ digital ad industry). The sector is **moderately concentrated at the top tier** (anchored by major tech giants and publicly traded exchanges like Microsoft Xandr, Google Ad Manager, Amazon Publisher Services, Magnite, and PubMatic) alongside a **highly fragmented ecosystem** of specialized programmatic platforms spanning Connected TV (CTV), mobile mediation, retail media, native ad units, and private marketplaces (PMPs).
+
+| Platform / Vendor | Market Cap / Valuation / Est. Revenue | Description & Core Capabilities | Pricing (Starting Tier / Commercial Model) | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **Microsoft Advertising (Xandr Monetize)** | **~$3.1 Trillion** (Microsoft Market Cap) | Enterprise sell-side monetization technology connecting publishers to global programmatic demand through header bidding, direct deals, and private marketplaces (PMPs). | **Seller Auction Service Charge (SASC) starting at ~10%–15%** take rate or ~$0.01–$0.03 tech fee CPM. | **Free API sandbox testing & developer documentation access** during contractual partner onboarding. |
+| **Google Ad Manager (GAM)** | **~$2.1 Trillion** (Alphabet Market Cap) | Google's flagship publisher monetization platform combining ad serving, programmatic demand (AdX), direct campaign pacing, yield optimization, and unified pricing rules. | Free standard tier; GAM 360 enterprise contracts start at **~$1,500–$3,000/month minimum** (~$100k/year enterprise agreement). | **Free forever** up to 90M non-video impressions/month (US/CA/ANZ/Europe) or 200M non-video impressions/month (other regions); 800k video impressions/month. |
+| **Amazon Publisher Services (APS)** | **~$2.1 Trillion** (Amazon Market Cap) | Cloud-based server-to-server header bidding infrastructure (Transparent Ad Marketplace / TAM & Unified Ad Marketplace / UAM) with direct Amazon demand and shopper insights. | **10% publisher transaction fee** deducted from buyer bids before entering auction (Transparent Ad Marketplace / TAM). | **Free publisher registration & SDK integration** with zero recurring monthly subscription or maintenance fees. |
+| **Yahoo SSP** | **~$7.0 Billion** (Apollo Global Mgmt) | Omnichannel sell-side monetization platform offering premium programmatic demand, identity resolution (Yahoo ConnectID), and server-side header bidding. | **Programmatic take rate starting at ~10%–15%** on publisher inventory transactions. | **Free publisher onboarding, ConnectID integration, and yield test period** with no upfront fees. |
+| **Magnite** | **~$2.2 Billion** (NASDAQ: MGNI / $650M+ Rev) | The world's largest independent sell-side advertising platform, specializing in connected TV (CTV), video, streaming audio, display, and mobile programmatic monetization. | **Dynamic take rate starting at ~10%–15%** revenue share on cleared CTV and programmatic ad revenue. | **Free partner onboarding and contract evaluation**; live test-traffic auction analysis during publisher integration. |
+| **TripleLift** | **~$1.4 Billion** (Vista Equity Partners / $150M+ Rev) | Leading programmatic platform specializing in custom native advertising, in-feed display, interactive CTV, and retail media monetization. | **Programmatic take rate starting at ~15%–20%** revenue share on native and premium ad placements. | **Free tag/adapter implementation & creative rendering sandbox** testing prior to live monetization. |
+| **PubMatic** | **~$1.0 Billion** (NASDAQ: PUBM / $290M+ Rev) | Cloud infrastructure platform for publishers and app developers, delivering OpenWrap wrapper management, identity hub, omnichannel RTB, and supply-path optimization. | **Dynamic take rate starting at ~10%–13%** revenue share on publisher impression volume. | **Free publisher registration & OpenWrap wrapper integration** with no recurring software license fees. |
+| **StackAdapt** | **~$1.0 Billion+** (Unicorn / $150M+ Rev) | Multi-channel programmatic advertising platform with extensive publisher supply connectivity across CTV, audio, native, display, and in-game ads. | **$0 monthly platform software fee** (self-serve tier; recommended starting ad spend of $1,000–$2,000/month; managed service from $5,000/month). | **Free platform account registration** with full UI access and free enrollment in Programmatic Masterclass certification. |
+| **Nexxen** | **~$600 Million** (NASDAQ: NEXN / $340M+ Rev) | Unified advertising platform combining sell-side SSP infrastructure, discovery data, TV view graphs, and exchange-level monetization across connected TV and video. | **Programmatic take rate starting at ~12%–18%** on video, CTV, and omnichannel media spend. | **Free platform demo walkthrough and trial pilot evaluation** for verified publisher inventory. |
+| **Index Exchange** | **~$500 Million+** (Private / $180M+ Rev) | Global independent ad exchange providing transparent programmatic marketplaces, client audit logs (CAL), and omnichannel header bidding decisioning. | **Transparent dynamic take rate starting at ~10%–12%** per-impression transaction fee. | **Free publisher integration and Client Audit Log access** with zero upfront setup or licensing fees. |
+| **Equativ** | **~$500 Million+** (Bridgepoint / $120M+ Rev) | Vertically integrated independent ad tech platform (merged with Sharethrough) delivering end-to-end programmatic supply infrastructure, curation, and native formats. | **Programmatic take rate starting at ~10%–15%** margin / CPM-based targeting fee on auction transactions. | **Free publisher evaluation & SDK integration sandbox** during partner onboarding. |
+| **Adform** | **~$300 Million+** (Valuation / $80M+ Rev) | European integrated programmatic platform offering enterprise ad serving, media buying, ID Fusion identity infrastructure, and publisher yield management. | **Platform tech fee starting at ~$0.05–$0.15 CPM** or custom annual licensing for enterprise stack. | **Guided proof-of-concept / paid pilot period** with demo sandbox environment access. |
+| **OpenX** | **~$250 Million+** (Valuation / $100M+ Rev) | 100% cloud-based programmatic exchange and SSP connecting premium publisher inventory with global DSP demand across web, mobile, and CTV. | **Programmatic revenue share starting at ~10%–15%** take rate on auction clearing prices. | **Free publisher onboarding & OpenRTB tag integration** with access to OpenX Community tools (traffic volume thresholds apply). |
+| **Sovrn** | **~$200 Million+** (Valuation / $80M+ Rev) | Publisher technology platform delivering programmatic header bidding, affiliate commerce monetization (Sovrn Commerce), and audience analytics. | **Flat CPM platform fee** (0% rev-share take rate when bundling Ad Management + Exchange) or standard ~15%–20% exchange rev-share. | **Free publisher signup and onboarding** with no upfront setup fees (requires minimum 10,000 monthly pageviews). |
+| **Yieldmo** | **~$150 Million+** (Valuation / $50M+ Rev) | Ad exchange and optimization engine specializing in proprietary mobile attention formats, contextual AI targeting, and micro-moment yield optimization. | **Programmatic take rate starting at ~15%–20%** on proprietary high-engagement mobile ad units. | **Free tag integration & A/B yield test period** with zero upfront onboarding fees. |
+| **Kevel** | **~$100 Million+** (Valuation / $25M+ Rev) | API-first ad infrastructure platform enabling publishers, marketplaces, and retailers to build custom ad servers, sponsored products, and retail media networks. | **Starting tier at $3,000/month** (base API tier with standard request volume); custom scaling for enterprise deployments. | **Interactive developer sandbox & API test environment** during guided sales onboarding (no self-serve free tier). |
+| **Onetag** | **~$100 Million+** (Valuation / $35M+ Rev) | Smart programmatic exchange utilizing machine learning to eliminate non-performing bid requests, reduce latency, and maximize publisher yield. | **Auction-based take rate starting at ~10%–15%** on direct programmatic demand routing. | **Free publisher header-bidding adapter setup & test-auction traffic analysis**. |
+| **Bidtellect** | **~$100 Million+** (Simplifi / $30M+ Rev) | Programmatic platform focused on context-driven native advertising, brand-safe supply monetization, and dynamic creative delivery. | **Programmatic revenue share starting at ~15%–20%** on native and contextual campaign delivery. | **Free publisher tag onboarding & initial campaign performance test period**. |
+| **AdButler** | **~$30M–$50M** (Sparklit / $12M+ Rev) | Fast, hosted ad server providing direct-sold campaign management, header bidding mediation, programmatic demand passback, and zone targeting. | **Essentials tier starts at $179/month** (up to 1M requests); Standard at $399/month; Advanced at $699/month. | **14-day free trial** with full platform feature access and 30 days of free onboarding support. |
+| **Broadstreet** | **~$15M–$25M** (Valuation / $6M+ Rev) | Publisher-first ad server designed specifically for hyper-local news publishers, regional media companies, industry trade publications, and newsletters. | **Manual tier starts at $299/month**; Automatic tier starts at $399/month; Enterprise custom pricing. | **Live sandbox demo** on request + free permanent access to "Daybreak" publisher lead-generation tools. |
+| **AdGlare** | **~$10M–$20M** (Valuation / $3M+ Rev) | Cloud-based ad server providing white-label ad serving, geotargeting, conversion tracking, custom campaigns, and display/video delivery. | **Lite tier starts at $99/month** (up to 2M requests); Professional at $349/month (up to 10M requests); Enterprise at $649/month. | **14-day free trial** with all features unlocked and up to 10,000,000 ad requests. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+The open-source ad tech ecosystem provides critical building blocks for building sovereign, publisher-owned auction stacks, ad servers, header bidding wrappers, and real-time data pipelines.
+
+> 🌟 Repositories are ranked below in descending order by GitHub star count.
+
+### 🏆 Top Open-Source Projects (Ranked by Stars)
+
+| Repository | Stars | Category / Focus | Description |
+| :--- | :---: | :--- | :--- |
+| [**MinIO**](https://github.com/minio/minio) | [![GitHub stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) | Creative / Event Storage | High-performance, S3-compatible object storage widely used for self-hosted creative assets, auction log dumps, and tracking payloads. |
+| [**ClickHouse**](https://github.com/ClickHouse/ClickHouse) | [![GitHub stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers) | Analytics Data Warehouse | Ultra-fast columnar database engine used for real-time bid-stream analysis, win/loss analytics, eCPM yield reporting, and fraud detection. |
+| [**Matomo**](https://github.com/matomo-org/matomo) | [![GitHub stars](https://img.shields.io/github/stars/matomo-org/matomo?style=social&color=white)](https://github.com/matomo-org/matomo/stargazers) | Analytics & Traffic | Leading privacy-first web analytics platform providing publisher traffic, pageview, and audience insights with 100% data ownership. |
+| [**Prebid.js**](https://github.com/prebid/Prebid.js) | [![GitHub stars](https://img.shields.io/github/stars/prebid/Prebid.js?style=social&color=white)](https://github.com/prebid/Prebid.js/stargazers) | Header Bidding | The industry-standard open-source client-side header bidding framework enabling publishers to run simultaneous auctions across 300+ demand partners. |
+| [**Revive Adserver**](https://github.com/revive-adserver/revive-adserver) | [![GitHub stars](https://img.shields.io/github/stars/revive-adserver/revive-adserver?style=social&color=white)](https://github.com/revive-adserver/revive-adserver/stargazers) | Open-Source Ad Server | The most popular open-source ad serving system. Supports publisher inventory, direct campaign delivery, geo-targeting, frequency capping, and click/impression tracking. |
+| [**RTBkit**](https://github.com/rtbkit/rtbkit) | [![GitHub stars](https://img.shields.io/github/stars/rtbkit/rtbkit?style=social&color=white)](https://github.com/rtbkit/rtbkit/stargazers) | RTB Core Engine | Modular, high-performance C++ real-time bidding framework providing building blocks for RTB exchanges, auction routers, and DSP/SSP bidding engines. |
+| [**Prebid Server (Go)**](https://github.com/prebid/prebid-server) | [![GitHub stars](https://img.shields.io/github/stars/prebid/prebid-server?style=social&color=white)](https://github.com/prebid/prebid-server/stargazers) | Server-Side Auction / SSP | Production-grade server-side header bidding and auction engine implemented in Go. Supports OpenRTB, dynamic floor pricing, privacy modules, and supply chains. |
+| [**IAB Tech Lab OpenRTB**](https://github.com/InteractiveAdvertisingBureau/openrtb) | [![GitHub stars](https://img.shields.io/github/stars/InteractiveAdvertisingBureau/openrtb?style=social&color=white)](https://github.com/InteractiveAdvertisingBureau/openrtb/stargazers) | Protocol Specification | Official IAB repository containing OpenRTB protocol specifications (2.5, 2.6, 3.0), AdCOM, and OpenRTB JSON schemas for automated ad transactions. |
+| [**BSM OpenRTB (Go)**](https://github.com/bsm/openrtb) | [![GitHub stars](https://img.shields.io/github/stars/bsm/openrtb?style=social&color=white)](https://github.com/bsm/openrtb/stargazers) | OpenRTB Go Library | Fast OpenRTB 2.x protocol parser and data structures in Go, optimized for low-latency serialization in real-time bidding applications. |
+| [**Prebid Universal Creative**](https://github.com/prebid/prebid-universal-creative) | [![GitHub stars](https://img.shields.io/github/stars/prebid/prebid-universal-creative?style=social&color=white)](https://github.com/prebid/prebid-universal-creative/stargazers) | Creative Rendering | Cross-environment creative rendering script ensuring seamless display, native, and video ad delivery across web, AMP, and mobile web ad slots. |
+| [**Google OpenRTB (Java)**](https://github.com/google/openrtb) | [![GitHub stars](https://img.shields.io/github/stars/google/openrtb?style=social&color=white)](https://github.com/google/openrtb/stargazers) | OpenRTB Java Library | Google's reference OpenRTB implementation providing Protobuf and JSON models for Java-based real-time bidding exchanges and DSPs. |
+| [**Prebid Server (Java)**](https://github.com/prebid/prebid-server-java) | [![GitHub stars](https://img.shields.io/github/stars/prebid/prebid-server-java?style=social&color=white)](https://github.com/prebid/prebid-server-java/stargazers) | Server-Side Auction (Java) | Java/Vert.x implementation of Prebid Server providing high-throughput asynchronous auction handling, bidder adapters, and analytics hooks. |
+| [**Prebid Mobile Android**](https://github.com/prebid/prebid-mobile-android) | [![GitHub stars](https://img.shields.io/github/stars/prebid/prebid-mobile-android?style=social&color=white)](https://github.com/prebid/prebid-mobile-android/stargazers) | Mobile App SDK | Native Android SDK for header bidding monetization across mobile applications, integrating with Google GMA SDK and GAM. |
+| [**Prebid Mobile iOS**](https://github.com/prebid/prebid-mobile-ios) | [![GitHub stars](https://img.shields.io/github/stars/prebid/prebid-mobile-ios?style=social&color=white)](https://github.com/prebid/prebid-mobile-ios/stargazers) | Mobile App SDK | Native iOS / Swift SDK bringing Prebid auction and rendering capabilities to iPhone, iPad, and Apple tvOS environments. |
+| [**Prebid OpenRTB (Go Models)**](https://github.com/prebid/openrtb) | [![GitHub stars](https://img.shields.io/github/stars/prebid/openrtb?style=social&color=white)](https://github.com/prebid/openrtb/stargazers) | Protocol Models | Go language OpenRTB 2.x and 3.x data structs maintained by Prebid.org for high-speed serialization within Prebid Server. |
+| [**OpenSSP**](https://github.com/OpenSSP/open-ssp) | [![GitHub stars](https://img.shields.io/github/stars/OpenSSP/open-ssp?style=social&color=white)](https://github.com/OpenSSP/open-ssp/stargazers) | Purpose-Built SSP | Java-based open-source supply-side platform designed for multi-channel RTB decisioning, demand connectivity, and ad exchange functions. |
+| [**ZenAd**](https://github.com/zenad/zenad) | [![GitHub stars](https://img.shields.io/github/stars/zenad/zenad?style=social&color=white)](https://github.com/zenad/zenad/stargazers) | Modern Ad Server / SSP | Apache-2.0 open-source ad monetization platform combining SSP, ad server, and DMP capabilities with a federated auction architecture. |
+| [**Ad Nano**](https://github.com/ad-nano/ad-nano) | [![GitHub stars](https://img.shields.io/github/stars/ad-nano/ad-nano?style=social&color=white)](https://github.com/ad-nano/ad-nano/stargazers) | Experimental Full Stack | End-to-end lightweight ad tech ecosystem containing publisher tag, SSP, DSP, exchange, and ad-rendering components for experimentation. |
+
+---
+
+## 🧱 Open-Source Building Blocks
+
+| Architectural Layer | Recommended Open-Source Solutions | Functional Purpose |
+| :--- | :--- | :--- |
+| **SSP / Auction Core** | `Prebid Server (Go/Java)`, `OpenSSP`, `ZenAd` | Real-time OpenRTB auction decisioning, bidder routing, and timeout management. |
+| **Client Header Bidding** | `Prebid.js` | Browser-side multi-demand auctions, user syncs, and slot orchestration. |
+| **Mobile Header Bidding** | `Prebid Mobile (Android/iOS)` | In-app mobile monetization and mediation integration (Google GMA SDK). |
+| **Ad Server / Campaign Manager** | `Revive Adserver` | Direct-sold campaign management, pacing, targeting, frequency capping, and fallbacks. |
+| **RTB Protocol Models** | `IAB OpenRTB`, `BSM OpenRTB`, `Google OpenRTB` | Standardized communication schemas between SSPs, DSPs, and exchanges. |
+| **Demand Bid Adapters** | `Prebid Server Adapters`, `Prebid.js Adapters` | Connect 300+ demand partners (Magnite, PubMatic, OpenX, Index, Amazon, etc.). |
+| **Dynamic Floor Pricing** | `Prebid Price Floors Module` | Dynamic floor rules and ML-driven yield optimization based on contextual signals. |
+| **Supply Chain Transparency** | `Prebid schain module`, `sellers.json` | Supply-path verification and cryptographic seller transparency. |
+| **Privacy & Consent** | `Prebid Consent Management (TCF v2.2, USP, GPP)` | GDPR consent strings, US state privacy signaling, and Google Consent Mode. |
+| **Identity & Addressability** | `Prebid User ID Module (UID2, ID5, SharedID)` | Universal identity resolution without reliance on third-party cookies. |
+| **Publisher Analytics** | `Matomo` | Privacy-centric self-hosted audience, traffic, and content performance analytics. |
+| **Real-Time Dashboards** | `Grafana` | Visualizing live auction revenue, fill rates, eCPMs, and bidder response latency. |
+| **Metrics & Telemetry** | `Prometheus` | Collecting sub-millisecond metrics on auction timeouts, error rates, and throughput. |
+| **Stream Processing** | `Apache Kafka` | High-throughput distributed event streaming for bid requests, wins, and clicks. |
+| **High-Volume Data Warehouse** | `ClickHouse` | Real-time analytical queries on billions of daily impression and bid-stream records. |
+| **Low-Latency Cache** | `Redis` | Sub-millisecond lookup for floor prices, user frequency caps, and targeting criteria. |
+| **Configuration Database** | `PostgreSQL` | Relational storage for publisher metadata, placement configs, deals, and audit logs. |
+| **Asset Storage** | `MinIO` | S3-compatible self-hosted object storage for creative creatives, logs, and tracking data. |
+| **Log Search Engine** | `OpenSearch` | Ingesting and querying raw auction logs, bidder errors, and audit traces. |
+| **Data Pipelines & ETL** | `Apache Airflow` | Orchestrating daily revenue reconciliation, billing reports, and data aggregations. |
+| **Container Infrastructure** | `Docker` / `Kubernetes` | Containerization, auto-scaling, and multi-region low-latency edge deployment. |
+| **API Gateway** | `Kong` | Rate limiting, authentication, and routing for external publisher and bidder APIs. |
+| **Distributed Tracing** | `OpenTelemetry` | End-to-end tracing of bid request lifecycles from wrapper to SSP to DSP. |
+
+---
+
+## 🏗️ Typical Open-Source SSP Architecture
+
+A modern, publisher-owned self-hosted SSP stack orchestrates the following flow:
+
+```
+[Publisher Web / App / CTV]
+             │
+             ├──► Prebid.js (Client-Side Header Bidding)
+             └──► Prebid Server (Server-Side Auction Engine)
+                         │
+                         ├──► OpenRTB 2.5 / 3.0 Protocol Engine
+                         ├──► Demand Adapters (DSP / Exchange Connections)
+                         ├──► Dynamic Price Floor Engine (Redis Cache)
+                         ├──► Identity Resolution (UID2 / ID5 / SharedID)
+                         └──► Direct Campaigns Fallback (Revive Adserver)
+                                     │
+                                     ▼
+                   [Event Stream: Apache Kafka]
+                                     │
+                   ┌─────────────────┴─────────────────┐
+                   ▼                                   ▼
+          [ClickHouse Warehouse]             [MinIO Object Storage]
+                   │                                   │
+                   ▼                                   ▼
+        [Grafana / Prometheus]               [Raw Log Archive / ETL]
+        (Real-Time Yield Dashboards)         (Airflow Billing Pipelines)
+```
+
+1. **Publisher Client:** Collects user consent, triggers Prebid.js / Prebid Mobile SDK, and sends impression slots to auction.
+2. **Prebid Server:** Evaluates dynamic floor prices from **Redis**, resolves user IDs, and broadcasts OpenRTB bid requests to hundreds of DSPs.
+3. **Revive Adserver:** Serves direct-sold sponsor campaigns or fallback house creatives if programmatic floor is not met.
+4. **Kafka & ClickHouse:** Streams every bid request, bid response, win, impression, and click for real-time eCPM yield tracking.
+5. **Grafana Dashboards:** Delivers instant observability into bidder latency, timeout rates, fill rates, and publisher revenue.
+
+---
+
+## 🔍 Key SSP Capabilities to Evaluate
+
+When selecting or architecting a Supply-Side Platform, evaluate these foundational pillars:
+
+* ⚡ **Auction Mechanics:** First-price auctions, header bidding mediation, multi-bid support, and dynamic floor pricing.
+* 🌐 **Protocol Compliance:** OpenRTB 2.5/2.6/3.0, OpenRTB Dynamic Native 1.2, VAST 4.x, and SIMID.
+* 📱 **Channel Coverage:** Web display, Accelerated Mobile Pages (AMP), mobile apps (iOS/Android), CTV/OTT video, digital audio, and DOOH.
+* 🤝 **Direct & Deal Capabilities:** Programmatic Guaranteed (PG), Private Marketplaces (PMP), Preferred Deals, and curated marketplaces.
+* 🛡️ **Supply Integrity & Anti-Fraud:** Automated ads.txt / app-ads.txt validation, sellers.json generation, SupplyChain Object (schain) injection, and bot-traffic filtering.
+* 🆔 **Identity & Addressability:** First-party data activation, alternative ID modules (Unified ID 2.0, ID5, LiveRamp, Yahoo ConnectID), and Google Privacy Sandbox support.
+* 📊 **Yield & Reporting:** Sub-millisecond log-level data (LLD), bid density reports, win-rate analytics, latency monitoring, and discrepancy resolution.
+* 🔒 **Data Ownership & Privacy:** Full sovereignty over log-level auction data, user consent telemetry (GDPR, CCPA/CPRA, GPP), and regional compliance.
+
+---
+
+## ⚖️ Commercial SSP vs Open-Source Stack
+
+| Feature / Dimension | Commercial Hosted SSP | Publisher Open-Source Stack |
+| :--- | :--- | :--- |
+| **Auction Engine** | Fully vendor-managed & maintained | Self-hosted (Prebid Server / OpenSSP) |
+| **Demand Connectivity** | Built-in relationships with major DSPs | Requires direct DSP contracts or adapter configs |
+| **Platform Take Rate** | Typically **10%–20%** revenue share deduction | **0% platform fee** (infrastructure hosting costs only) |
+| **Data Ownership** | Controlled and aggregated by vendor | **100% first-party publisher ownership** |
+| **Auction Customization** | Restricted to vendor's proprietary logic | Fully customizable auction rules, floors, and bidder pacing |
+| **Header Bidding** | Often vendor wrapper or proprietary SDK | Industry-standard Prebid.js / Prebid Server |
+| **Direct Campaign Management** | Included in enterprise packages | Managed via Revive Adserver or custom ad server |
+| **Setup & Maintenance Effort** | Low engineering overhead; fast onboarding | Requires DevOps, Kubernetes scaling, and ad tech engineers |
+| **Transparency** | Vendor-dependent reporting & logs | Full code-level and log-level transparency |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Help make this the most comprehensive and up-to-date guide to the Supply-Side Platform ecosystem:
+
+1. 🍴 **Fork** this repository.
+2. ➕ **Add or update** entries in `README.md` following the established format:
+   - For SaaS: include platform name, estimated valuation/revenue, capabilities, specific starting pricing, and exact free tier/trial limits.
+   - For Open-Source: include repo link, star badge (`style=social&color=white`), category, and descriptive summary.
+3. 🔗 **Link to official resources:** Use official vendor websites or canonical GitHub repositories.
+4. 📝 **Submit a Pull Request** with a clear explanation of your changes.
+5. ⭐ **Star this repository** to support the project!
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Supply-Side-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Supply-Side-Platform&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+* This repository is a community-curated directory intended for educational, architectural, and informational purposes. It does not constitute an endorsement.
+* Commercial SSPs, ad exchanges, and ad servers frequently update their feature sets, corporate ownership, pricing structures, and terms of service.
+* Programmatic revenue outcomes depend on multiple dynamic variables including inventory volume, audience geography, domain authority, format mix, viewability, latency, and direct buyer relationships.
+* Advertising infrastructure processes user data and must comply with applicable privacy regulations (e.g., GDPR, CCPA/CPRA, ePrivacy Directive). Publishers are responsible for implementing appropriate consent and data governance mechanisms.
+
+---
+
+<div align="center">
+  <sub>Maintained with ❤️ for publishers, media companies, ad-tech engineers, and programmatic teams worldwide.</sub>
+</div>

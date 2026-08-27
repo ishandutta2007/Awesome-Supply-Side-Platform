@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient with dynamic color shift -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#c084fc;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8;#c084fc;#f472b6;#818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#c084fc">
+        <animate attributeName="stop-color" values="#c084fc;#38bdf8;#818cf8;#c084fc" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0% { opacity: 0.3; r: 4px; }
+      50% { opacity: 0.9; r: 7px; }
+      100% { opacity: 0.3; r: 4px; }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0px); }
+    }
+    .grid-bg { fill: url(#grid); }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      fill: url(#accentGrad);
+      letter-spacing: -1px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+      letter-spacing: 0.5px;
+    }
+    .badge-pill {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #38bdf8;
+    }
+    .flow-line {
+      stroke: url(#accentGrad);
+      stroke-width: 2;
+      stroke-dasharray: 8, 6;
+      animation: dash 5s linear infinite;
+      fill: none;
+      opacity: 0.6;
+    }
+    .pulse-dot {
+      animation: pulse 3s infinite ease-in-out;
+    }
+    .floating-badge {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1200" height="360" rx="16" class="grid-bg"/>
+
+  <!-- Subtle Radial Highlights -->
+  <circle cx="200" cy="180" r="140" fill="#3b82f6" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1000" cy="180" r="160" fill="#8b5cf6" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Network Circuit Lines (RTB & Auction Flow) -->
+  <path d="M 120 180 Q 250 80 450 180 T 800 180 T 1080 180" class="flow-line"/>
+  <path d="M 120 180 Q 300 280 550 180 T 900 180 T 1080 180" class="flow-line" style="animation-duration: 7s;"/>
+
+  <!-- Network Nodes -->
+  <circle cx="120" cy="180" r="6" fill="#38bdf8" class="pulse-dot" filter="url(#glow)"/>
+  <circle cx="300" cy="120" r="5" fill="#818cf8" class="pulse-dot" style="animation-delay: 0.5s;" filter="url(#glow)"/>
+  <circle cx="450" cy="180" r="7" fill="#c084fc" class="pulse-dot" style="animation-delay: 1s;" filter="url(#glow)"/>
+  <circle cx="680" cy="240" r="5" fill="#f472b6" class="pulse-dot" style="animation-delay: 1.5s;" filter="url(#glow)"/>
+  <circle cx="850" cy="150" r="6" fill="#38bdf8" class="pulse-dot" style="animation-delay: 2s;" filter="url(#glow)"/>
+  <circle cx="1080" cy="180" r="6" fill="#4ade80" class="pulse-dot" style="animation-delay: 2.5s;" filter="url(#glow)"/>
+
+  <!-- Main Banner Header -->
+  <g transform="translate(600, 115)" text-anchor="middle">
+    <!-- Category Pill -->
+    <g class="floating-badge">
+      <rect x="-175" y="-45" width="350" height="30" rx="15" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+      <text x="0" y="-25" text-anchor="middle" class="badge-pill">⚡ CURATED ADTECH &amp; MONETIZATION STACK</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="35" class="title-text">Awesome Supply-Side Platform</text>
+    <!-- Subtitle -->
+    <text x="0" y="80" class="subtitle-text">Publisher Monetization • Header Bidding • RTB • OpenRTB • Yield Optimization</text>
+  </g>
+
+  <!-- Bottom Feature Badges -->
+  <g transform="translate(600, 275)" text-anchor="middle">
+    <!-- Badge 1 -->
+    <g transform="translate(-330, 0)">
+      <rect x="-95" y="-18" width="190" height="36" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="0" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">📊 Commercial SaaS</text>
+    </g>
+    <!-- Badge 2 -->
+    <g transform="translate(-110, 0)">
+      <rect x="-95" y="-18" width="190" height="36" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="0" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">💻 Open-Source RTB</text>
+    </g>
+    <!-- Badge 3 -->
+    <g transform="translate(110, 0)">
+      <rect x="-95" y="-18" width="190" height="36" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="0" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">⚡ Header Bidding</text>
+    </g>
+    <!-- Badge 4 -->
+    <g transform="translate(330, 0)">
+      <rect x="-95" y="-18" width="190" height="36" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="0" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" text-anchor="middle">📈 Yield &amp; Analytics</text>
+    </g>
+  </g>
+</svg>
