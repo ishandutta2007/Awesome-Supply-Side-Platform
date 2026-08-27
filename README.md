@@ -86,7 +86,7 @@ The open-source ad tech ecosystem provides critical building blocks for building
 
 ### 🏆 Top Open-Source Projects (Ranked by Stars)
 
-| Repository | Stars | Category / Focus | Description |
+| Repository | Github_Stars | Category / Focus | Description |
 | :--- | :---: | :--- | :--- |
 | [**MinIO**](https://github.com/minio/minio) | [![GitHub stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) | Creative / Event Storage | High-performance, S3-compatible object storage widely used for self-hosted creative assets, auction log dumps, and tracking payloads. |
 | [**ClickHouse**](https://github.com/ClickHouse/ClickHouse) | [![GitHub stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers) | Analytics Data Warehouse | Ultra-fast columnar database engine used for real-time bid-stream analysis, win/loss analytics, eCPM yield reporting, and fraud detection. |
