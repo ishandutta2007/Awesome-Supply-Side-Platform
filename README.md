@@ -29,82 +29,32 @@ How to Contribute
 
 Disclaimer
 
-SaaS/Hosted Platforms
+## SaaS/Hosted Platforms
 
-Magnite
-Major independent sell-side advertising platform supporting programmatic monetization across CTV, video, display, mobile, and other digital media formats.
-
-PubMatic
-Cloud infrastructure platform for digital publishers and app developers, providing programmatic advertising, header bidding, yield optimization, analytics, and supply-path capabilities.
-
-OpenX
-Programmatic advertising exchange and publisher monetization platform connecting premium digital inventory with demand partners across display, mobile, video, and CTV.
-
-Index Exchange
-Global independent advertising exchange focused on transparent programmatic marketplaces and monetization for publishers across web, mobile, video, CTV, and other media.
-
-Equativ
-Independent advertising technology company providing sell-side and programmatic infrastructure across digital advertising formats, including video, CTV, mobile, and web.
-
-TripleLift
-Programmatic advertising platform specializing in native, display, video, CTV, and commerce media, with SSP capabilities connecting publishers and buyers.
-
-Sharethrough
-Independent advertising technology platform focused on native advertising, programmatic monetization, supply optimization, and publisher experiences.
-
-Xandr Monetize
-Microsoft/Xandr sell-side monetization technology connecting publishers and media owners to programmatic demand through auctions, direct deals, and marketplace infrastructure.
-
-Google Ad Manager
-Google's publisher advertising platform combining ad serving, programmatic demand, direct campaign management, inventory management, yield optimization, and reporting.
-
-Sovrn
-Publisher technology platform providing programmatic advertising, commerce monetization, analytics, and tools for independent publishers.
-
-Amazon Publisher Services
-Amazon's publisher monetization ecosystem providing programmatic demand, header bidding, marketplace services, and advertising infrastructure for digital publishers.
-
-Yahoo SSP
-Yahoo's advertising technology platform providing programmatic monetization and supply-side capabilities across digital media inventory.
-
-Verizon Media / Yahoo SSP
-Publisher monetization technology that evolved from Verizon Media's advertising infrastructure and is now part of Yahoo's advertising business.
-
-Sharethrough Equativ
-The Equativ ecosystem incorporates technology and capabilities spanning programmatic supply, native advertising, publisher monetization, and media buying.
-
-Nexxen
-Advertising technology platform combining media buying, data, identity, and sell-side capabilities across connected TV, video, display, and other digital channels.
-
-StackAdapt
-Programmatic advertising platform with extensive publisher and supply connectivity across display, video, CTV, native, audio, and emerging media.
-
-Kevel
-API-first ad infrastructure platform enabling companies and publishers to build custom ad servers, sponsored-product systems, retail media networks, and monetization products.
-
-Adform
-Integrated advertising technology platform providing programmatic infrastructure, media buying, data, identity, and publisher-side capabilities.
-
-Yieldmo
-Advertising exchange and optimization platform specializing in mobile and web inventory, contextual advertising, and programmatic yield optimization.
-
-Sharethrough
-Native advertising and programmatic supply platform designed around publisher monetization, ad quality, and user experience.
-
-Onetag
-Programmatic advertising and monetization platform providing publishers with auction and demand connectivity across digital inventory.
-
-Bidtellect
-Programmatic advertising technology provider focused on native advertising, contextual targeting, and publisher monetization.
-
-AdButler
-Hosted ad-serving platform providing publishers with direct-sold campaign management, programmatic integrations, targeting, reporting, and inventory management.
-
-AdGlare
-Cloud-based ad server for publishers and advertisers supporting display advertising, campaign management, targeting, and reporting.
-
-Broadstreet
-Publisher-focused advertising platform designed for direct-sold advertising, campaign management, reporting, and local/media publisher monetization.
+| Platform | Description | Pricing (Starting Tier / Model) | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **Google Ad Manager** | Google's publisher ad platform combining ad serving, programmatic demand, direct campaigns, inventory management, and yield optimization. | Free standard tier; GAM 360 starts with custom contracted rates (~$1,500–$3,000/month minimum or ~$100k/year enterprise agreement). | **Free forever** up to 90M non-video impressions/month (US/CA/ANZ/Europe) or 200M non-video impressions/month (other regions); 800k video impressions/month. |
+| **AdGlare** | Cloud-based ad server for publishers and advertisers supporting display advertising, campaign management, targeting, and analytics. | **Lite tier starts at $99/month** (up to 2M requests); Professional at $349/month (up to 10M requests); Enterprise at $649/month. | **14-day free trial** with all features unlocked and up to 10,000,000 ad requests. |
+| **AdButler** | Hosted ad-serving platform providing direct-sold campaign management, programmatic integrations, custom pacing, and reporting. | **Essentials tier starts at $179/month** (up to 1M requests); Standard at $399/month; Advanced at $699/month. | **14-day free trial** with full platform feature access and 30 days of free onboarding support. |
+| **Broadstreet** | Publisher-focused advertising platform designed for direct-sold advertising, hyper-local publishers, newsletters, and rich media campaigns. | **Manual tier starts at $299/month**; Automatic tier starts at $399/month; Enterprise custom pricing. | **Live sandbox demo** on request + free permanent access to "Daybreak" publisher lead-generation tools. |
+| **Kevel** | API-first ad infrastructure platform enabling publishers and retailers to build custom ad servers, sponsored listings, and retail media networks. | **Starting tier at $3,000/month** (base API tier with standard request volume); custom scaling for enterprise deployments. | **Interactive developer sandbox & API test environment** during guided sales onboarding (no self-serve free tier). |
+| **StackAdapt** | Multi-channel programmatic platform with extensive publisher and supply connectivity across display, video, CTV, native, and audio. | **$0 monthly platform software fee** (self-serve tier; recommended starting ad spend of $1,000–$2,000/month; managed service from $5,000/month). | **Free platform account registration** with full UI access and free enrollment in Programmatic Masterclass certification. |
+| **Amazon Publisher Services (APS)** | Publisher monetization suite providing transparent server-to-server header bidding (TAM), marketplace demand (UAM), and shopping insights. | **10% publisher transaction fee** deducted from buyer bids before entering auction (Transparent Ad Marketplace / TAM). | **Free publisher registration & SDK integration** with zero recurring monthly subscription or maintenance fees. |
+| **Sovrn** | Publisher technology platform providing programmatic advertising, commerce monetization, site performance analytics, and consent tools. | **Flat CPM platform fee** (0% rev-share take rate when bundling Ad Management + Exchange) or standard ~15%–20% exchange rev-share. | **Free publisher signup and onboarding** with no upfront setup fees (requires minimum 10,000 monthly pageviews). |
+| **Magnite** | Independent sell-side advertising platform supporting omnichannel programmatic monetization across CTV, video, display, and mobile. | **Dynamic take rate starting at ~10%–15%** revenue share on cleared CTV and programmatic ad revenue. | **Free partner onboarding and contract evaluation**; live test-traffic auction analysis during publisher integration. |
+| **PubMatic** | Cloud infrastructure platform for publishers and app developers, delivering header bidding (OpenWrap), programmatic auctions, and yield tools. | **Dynamic take rate starting at ~10%–13%** revenue share on publisher impression volume. | **Free publisher registration & OpenWrap wrapper integration** with no recurring software license fees. |
+| **OpenX** | Programmatic advertising exchange and publisher monetization platform connecting inventory with global demand across web, mobile, and CTV. | **Programmatic revenue share starting at ~10%–15%** take rate on auction clearing prices. | **Free publisher onboarding & OpenRTB tag integration** with access to OpenX Community tools (traffic volume thresholds apply). |
+| **Index Exchange** | Independent ad exchange providing transparent programmatic marketplaces, client audit logs, and unified auction decisioning. | **Transparent dynamic take rate starting at ~10%–12%** per-impression transaction fee. | **Free publisher integration and Client Audit Log access** with zero upfront setup or licensing fees. |
+| **Equativ** | Independent ad tech company offering end-to-end programmatic supply infrastructure, curation, native formats, and video/CTV monetization. | **Programmatic take rate starting at ~10%–15%** margin / CPM-based targeting fee on auction transactions. | **Free publisher evaluation & SDK integration sandbox** during partner onboarding. |
+| **TripleLift** | Programmatic platform specializing in native advertising, branded content, custom video, CTV, and retail media monetization. | **Programmatic take rate starting at ~15%–20%** revenue share on native and premium ad placements. | **Free tag/adapter implementation & creative rendering sandbox** testing prior to live monetization. |
+| **Sharethrough** | Native and programmatic supply platform focused on dynamic ad enhancements, user-centric experiences, and publisher yield. | **Programmatic take rate starting at ~12%–15%** on dynamic native, display, and video placements. | **Free publisher placement setup & SmartSuite enhancement testing** with no upfront integration cost. |
+| **Xandr Monetize** | Enterprise sell-side monetization technology (Microsoft Advertising) connecting publishers to demand through auctions and private marketplaces. | **Seller Auction Service Charge (SASC) starting at ~10%–15%** take rate or ~$0.01–$0.03 tech fee CPM. | **Free API sandbox testing & developer documentation access** during contractual partner onboarding. |
+| **Yahoo SSP** | Omnichannel publisher monetization platform offering programmatic demand, identity resolution (Yahoo ConnectID), and header bidding. | **Programmatic take rate starting at ~10%–15%** on publisher inventory transactions. | **Free publisher onboarding, ConnectID integration, and yield test period** with no upfront fees. |
+| **Nexxen** | Sell-side and video advertising platform combining CTV monetization, discovery data, identity, and exchange infrastructure. | **Programmatic take rate starting at ~12%–18%** on video, CTV, and omnichannel media spend. | **Free platform demo walkthrough and trial pilot evaluation** for verified publisher inventory. |
+| **Adform** | Integrated programmatic advertising platform providing ad serving, media buying, identity (ID Fusion), and publisher monetization. | **Platform tech fee starting at ~$0.05–$0.15 CPM** or custom annual licensing for enterprise stack. | **Guided proof-of-concept / paid pilot period** with demo sandbox environment access. |
+| **Yieldmo** | Ad exchange and optimization platform specializing in mobile and web inventory, contextual AI targeting, and micro-moment ad formats. | **Programmatic take rate starting at ~15%–20%** on proprietary high-engagement mobile ad units. | **Free tag integration & A/B yield test period** with zero upfront onboarding fees. |
+| **Onetag** | Programmatic ad exchange and yield optimization engine utilizing AI to eliminate non-performing bid requests and streamline demand routing. | **Auction-based take rate starting at ~10%–15%** on direct programmatic demand routing. | **Free publisher header-bidding adapter setup & test-auction traffic analysis**. |
+| **Bidtellect** | Programmatic technology provider focused on native advertising, contextual targeting, brand safety, and publisher yield. | **Programmatic revenue share starting at ~15%–20%** on native and contextual campaign delivery. | **Free publisher tag onboarding & initial campaign performance test period**. |
 
 Open-Source GitHub Projects
 Open-Source SSP / RTB Infrastructure
